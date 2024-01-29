@@ -77,8 +77,12 @@ const app = Vue.createApp({
          
         prevSlide(){
             this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
-        }    
+        },    
         
+
+        selectSlide(index) {
+            this.currentSlide = index;
+        },
         }
     }
     
